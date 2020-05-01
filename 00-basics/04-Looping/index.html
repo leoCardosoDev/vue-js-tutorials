@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Introduction</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        {{ students }}
+        <br>
+        <ul>
+            <li v-for="student in students">{{ student }}</li> 
+        </ul>
+
+        <ul>
+            <li v-for="player in players">{{ player }}</li> 
+        </ul>
+
+        <ul>
+            <li v-for="player in players">Name: {{ player.name }} - Score: {{ player.score }}</li> 
+        </ul>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

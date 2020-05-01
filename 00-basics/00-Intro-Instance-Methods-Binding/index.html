@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Introduction</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        {{ message }} <br>
+        {{ name }} <br>
+        The final price is {{ discount(10) }}
+
+        <br><br>
+        <img v-bind:src="path" width="400" height="250" alt="Image">
+        <br><br>
+
+        <a v-bind:href="link" target="_blank">Link do GOOGLE</a>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

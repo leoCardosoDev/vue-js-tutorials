@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Introduction</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h1 v-if="gate">Gate is Open</h1>
+        <h2 v-else-if="!gate">Gate Closed!</h2>
+        <br>
+        <button v-on:click="gate=!gate">Change gate</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
